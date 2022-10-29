@@ -82,7 +82,23 @@ print("neutral number: ",len(neutral_list))
 
 
 # Plot a graph for above output
-
+labels = ['Positive ['+str(positive)+'%]' , 'Neutral ['+str(neutral)+'%]','Negative ['+str(negative)+'%]']
+sizes = [positive, neutral, negative]
+colors = ['yellowgreen', 'blue','red']
+patches, texts = plt.pie(sizes,colors=colors, startangle=90)
+plt.style.use('default')
+plt.legend(labels)
+plt.title("Sentiment Analysis Result for keyword= "+keyword+"" )
+plt.axis('equal')
+plt.show()labels = ['Positive ['+str(positive)+'%]' , 'Neutral ['+str(neutral)+'%]','Negative ['+str(negative)+'%]']
+sizes = [positive, neutral, negative]
+colors = ['yellowgreen', 'blue','red']
+patches, texts = plt.pie(sizes,colors=colors, startangle=90)
+plt.style.use('default')
+plt.legend(labels)
+plt.title("Sentiment Analysis Result for keyword= "+keyword+"" )
+plt.axis('equal')
+plt.show()
 
 
 
