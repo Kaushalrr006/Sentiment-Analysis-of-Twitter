@@ -127,5 +127,7 @@ for index, row in tw_list['text'].iteritems():
   tw_list.loc[index, 'compound'] = comp
 tw_list.head(10)
 
+print("s
+
 
 
